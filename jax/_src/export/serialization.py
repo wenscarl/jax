@@ -357,14 +357,14 @@ _dtype_to_dtype_kind = {
     dtypes._float8_e4m3fnuz_dtype: ser_flatbuf.DType.f8_e4m3fnuz,
     dtypes._float8_e5m2_dtype: ser_flatbuf.DType.f8_e5m2,
     dtypes._float8_e5m2fnuz_dtype: ser_flatbuf.DType.f8_e5m2fnuz,
-    dtypes._float8_e8m0fnu_dtype: ser_flatbuf.DType.f8_e8m0fnu,
 }
 
 if dtypes._float8_e3m4_dtype is not None:
   _dtype_to_dtype_kind[dtypes._float8_e3m4_dtype] = ser_flatbuf.DType.f8_e3m4
 if dtypes._float8_e4m3_dtype is not None:
   _dtype_to_dtype_kind[dtypes._float8_e4m3_dtype] = ser_flatbuf.DType.f8_e4m3
-
+if dtypes._float8_e8m0fnu_dtype is not None:
+  _dtype_to_dtype_kind[dtypes._float8_e8m0fnu_dtype] = ser_flatbuf.DType.f8_e8m0fnu
 _dtype_kind_to_dtype = {
     kind: dtype for dtype, kind in _dtype_to_dtype_kind.items()
 }

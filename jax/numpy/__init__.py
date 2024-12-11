@@ -117,7 +117,6 @@ from jax._src.numpy.lax_numpy import (
     float8_e4m3fnuz as float8_e4m3fnuz,
     float8_e5m2 as float8_e5m2,
     float8_e5m2fnuz as float8_e5m2fnuz,
-    float8_e8m0fnu as float8_e8m0fnu,
     float_ as float_,
     floating as floating,
     fmax as fmax,
@@ -280,6 +279,7 @@ try:
   from jax._src.numpy.lax_numpy import (
     float8_e3m4 as float8_e3m4,
     float8_e4m3 as float8_e4m3,
+    float8_e8m0fnu as float8_e8m0fnu,
   )
 except ImportError:
   pass
