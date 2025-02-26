@@ -174,9 +174,9 @@ if hasattr(ml_dtypes, "float8_e8m0fnu"):
 if hasattr(ml_dtypes, "float4_e2m1fn"):
   float4_e2m1fn = ml_dtypes.float4_e2m1fn
   _float4_e2m1fn_dtype = np.dtype(float4_e2m1fn)
-  _custom_float_scalar_types.insert(0, float4_e2m1fn)
-  _custom_float_dtypes.insert(0, _float4_e2m1fn_dtype)  # type: ignore[arg-type]
-  _float4_dtypes.insert(0, _float4_e2m1fn_dtype)  # type: ignore[arg-type]
+  _custom_float_scalar_types.insert(0, float4_e2m1fn)  # type: ignore[arg-type]
+  _custom_float_dtypes.insert(0, _float4_e2m1fn_dtype)
+  _float4_dtypes.insert(0, _float4_e2m1fn_dtype)
 
 # 2-bit integer support
 int2: type[np.generic] | None = None
